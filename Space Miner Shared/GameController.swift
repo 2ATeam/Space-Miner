@@ -13,8 +13,10 @@ import SceneKit
 
 #if os(macOS)
     typealias SCNColor = NSColor
+    typealias SCNImage = NSImage
 #else
     typealias SCNColor = UIColor
+    typealias SCNImage = UIImage
 #endif
 
 class GameController: NSObject, SCNSceneRendererDelegate {
@@ -30,11 +32,15 @@ class GameController: NSObject, SCNSceneRendererDelegate {
         
         sceneRenderer.delegate = self
         
-        if let ship = scene.rootNode.childNode(withName: "ship", recursively: true) {
-            ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
-        }
-        
         sceneRenderer.scene = scene
+        
+        scene.background.contents = [SCNImage(named: "right")!,
+                                     SCNImage(named: "left")!,
+                                     SCNImage(named: "top")!,
+                                     SCNImage(named: "bottom")!,
+                                     SCNImage(named: "front")!,
+                                     SCNImage(named: "back")!
+                                    ]
     }
     
     func highlightNodes(atPoint point: CGPoint) {

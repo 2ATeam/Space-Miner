@@ -10,9 +10,7 @@ import SceneKit
 
 class GameViewController: UIViewController {
 
-    var gameView: SCNView {
-        return self.view as! SCNView
-    }
+    var gameView: SCNView { view as! SCNView }
     
     var gameController: GameController!
     
