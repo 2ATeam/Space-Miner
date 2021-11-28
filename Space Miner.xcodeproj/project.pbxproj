@@ -20,7 +20,95 @@
 		00B093E62736FC4C0056F916 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B093C22736FC480056F916 /* Art.scnassets */; };
 		00B093E72736FC4C0056F916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B093C32736FC4B0056F916 /* Assets.xcassets */; };
 		00B093E82736FC4C0056F916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B093C32736FC4B0056F916 /* Assets.xcassets */; };
+		00EEE9432754316F00E53E2F /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9422754316F00E53E2F /* GridTests.swift */; };
+		00EEE95A2754318B00E53E2F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; };
+		00EEE95B2754318B00E53E2F /* Grid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00EEE9792754389700E53E2F /* ECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9712754389700E53E2F /* ECS.framework */; };
+		00EEE9842754389700E53E2F /* ECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9712754389700E53E2F /* ECS.framework */; };
+		00EEE9852754389700E53E2F /* ECS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9712754389700E53E2F /* ECS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00EEE9B82754396700E53E2F /* ECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9B22754396700E53E2F /* ECS.framework */; };
+		00EEE9B92754396700E53E2F /* ECS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9B22754396700E53E2F /* ECS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00EEE9BE275439B300E53E2F /* ECSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE99F275438BD00E53E2F /* ECSTests.swift */; };
+		00EEE9D127543B7700E53E2F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00EEE93D2754316F00E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EEE9332754316F00E53E2F;
+			remoteInfo = "Grid iOS";
+		};
+		00EEE9582754318B00E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EEE9532754318B00E53E2F;
+			remoteInfo = "Grid macOS";
+		};
+		00EEE97A2754389700E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EEE9702754389700E53E2F;
+			remoteInfo = "ECS macOS";
+		};
+		00EEE97C2754389700E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B093D82736FC4C0056F916;
+			remoteInfo = "Space Miner macOS";
+		};
+		00EEE9822754389700E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EEE9702754389700E53E2F;
+			remoteInfo = "ECS macOS";
+		};
+		00EEE9B62754396700E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EEE9B12754396700E53E2F;
+			remoteInfo = "ECS iOS";
+		};
+		00EEE9CE27543AFD00E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B093D82736FC4C0056F916;
+			remoteInfo = "Space Miner macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00EEE95F2754318B00E53E2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00EEE9852754389700E53E2F /* ECS.framework in Embed Frameworks */,
+				00EEE95B2754318B00E53E2F /* Grid.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9A9275438BD00E53E2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00EEE9B92754396700E53E2F /* ECS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00B093C12736FC480056F916 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -36,6 +124,14 @@
 		00B093DD2736FC4C0056F916 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		00B093E02736FC4C0056F916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00B093E22736FC4C0056F916 /* Space_Miner_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Space_Miner_macOS.entitlements; sourceTree = "<group>"; };
+		00EEE9342754316F00E53E2F /* Grid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Grid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE93B2754316F00E53E2F /* Grid Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grid Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE9422754316F00E53E2F /* GridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTests.swift; sourceTree = "<group>"; };
+		00EEE9542754318B00E53E2F /* Grid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Grid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE9712754389700E53E2F /* ECS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE9782754389700E53E2F /* ECS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ECS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE99F275438BD00E53E2F /* ECSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECSTests.swift; sourceTree = "<group>"; };
+		00EEE9B22754396700E53E2F /* ECS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +139,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EEE9B82754396700E53E2F /* ECS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		00B093D62736FC4C0056F916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EEE9842754389700E53E2F /* ECS.framework in Frameworks */,
+				00EEE95A2754318B00E53E2F /* Grid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9312754316F00E53E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9382754316F00E53E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EEE9D127543B7700E53E2F /* Grid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9512754318B00E53E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE96E2754389700E53E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9752754389700E53E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EEE9792754389700E53E2F /* ECS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9AF2754396700E53E2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,13 +205,19 @@
 				00B093C02736FC480056F916 /* Space Miner Shared */,
 				00B093CA2736FC4B0056F916 /* Space Miner iOS */,
 				00B093DA2736FC4C0056F916 /* Space Miner macOS */,
+				00EEE9352754316F00E53E2F /* Grid */,
+				00EEE9412754316F00E53E2F /* Grid Tests */,
+				00EEE9722754389700E53E2F /* ECS */,
+				00EEE97E2754389700E53E2F /* ECS Tests */,
 				00B093C92736FC4B0056F916 /* Products */,
+				00EEE9D027543B7700E53E2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		00B093C02736FC480056F916 /* Space Miner Shared */ = {
 			isa = PBXGroup;
 			children = (
+				00EEE8E627540D2500E53E2F /* Grid */,
 				00B093C12736FC480056F916 /* GameController.swift */,
 				00B093C22736FC480056F916 /* Art.scnassets */,
 				00B093C32736FC4B0056F916 /* Assets.xcassets */,
@@ -81,6 +230,12 @@
 			children = (
 				00B093C82736FC4B0056F916 /* Space Miner.app */,
 				00B093D92736FC4C0056F916 /* Space Miner.app */,
+				00EEE9342754316F00E53E2F /* Grid.framework */,
+				00EEE93B2754316F00E53E2F /* Grid Tests.xctest */,
+				00EEE9542754318B00E53E2F /* Grid.framework */,
+				00EEE9712754389700E53E2F /* ECS.framework */,
+				00EEE9782754389700E53E2F /* ECS Tests.xctest */,
+				00EEE9B22754396700E53E2F /* ECS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +262,98 @@
 			path = "Space Miner macOS";
 			sourceTree = "<group>";
 		};
+		00EEE8E627540D2500E53E2F /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		00EEE9352754316F00E53E2F /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				00EEE9612754328900E53E2F /* Sources */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		00EEE9412754316F00E53E2F /* Grid Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00EEE9422754316F00E53E2F /* GridTests.swift */,
+			);
+			path = "Grid Tests";
+			sourceTree = "<group>";
+		};
+		00EEE9612754328900E53E2F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		00EEE9722754389700E53E2F /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				00EEE9BD275439A600E53E2F /* Sources */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		00EEE97E2754389700E53E2F /* ECS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00EEE99F275438BD00E53E2F /* ECSTests.swift */,
+			);
+			path = "ECS Tests";
+			sourceTree = "<group>";
+		};
+		00EEE9BD275439A600E53E2F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		00EEE9D027543B7700E53E2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00EEE92F2754316F00E53E2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE94F2754318B00E53E2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE96C2754389700E53E2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9AD2754396700E53E2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		00B093C72736FC4B0056F916 /* Space Miner iOS */ = {
@@ -117,10 +363,12 @@
 				00B093C42736FC4B0056F916 /* Sources */,
 				00B093C52736FC4B0056F916 /* Frameworks */,
 				00B093C62736FC4B0056F916 /* Resources */,
+				00EEE9A9275438BD00E53E2F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00EEE9B72754396700E53E2F /* PBXTargetDependency */,
 			);
 			name = "Space Miner iOS";
 			productName = "Space Miner iOS";
@@ -134,15 +382,128 @@
 				00B093D52736FC4C0056F916 /* Sources */,
 				00B093D62736FC4C0056F916 /* Frameworks */,
 				00B093D72736FC4C0056F916 /* Resources */,
+				00EEE95F2754318B00E53E2F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00EEE9592754318B00E53E2F /* PBXTargetDependency */,
+				00EEE9832754389700E53E2F /* PBXTargetDependency */,
 			);
 			name = "Space Miner macOS";
 			productName = "Space Miner macOS";
 			productReference = 00B093D92736FC4C0056F916 /* Space Miner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		00EEE9332754316F00E53E2F /* Grid iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EEE9492754316F00E53E2F /* Build configuration list for PBXNativeTarget "Grid iOS" */;
+			buildPhases = (
+				00EEE92F2754316F00E53E2F /* Headers */,
+				00EEE9302754316F00E53E2F /* Sources */,
+				00EEE9312754316F00E53E2F /* Frameworks */,
+				00EEE9322754316F00E53E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grid iOS";
+			productName = "Grid iOS";
+			productReference = 00EEE9342754316F00E53E2F /* Grid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		00EEE93A2754316F00E53E2F /* Grid Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EEE94C2754316F00E53E2F /* Build configuration list for PBXNativeTarget "Grid Tests" */;
+			buildPhases = (
+				00EEE9372754316F00E53E2F /* Sources */,
+				00EEE9382754316F00E53E2F /* Frameworks */,
+				00EEE9392754316F00E53E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EEE93E2754316F00E53E2F /* PBXTargetDependency */,
+				00EEE9CF27543AFD00E53E2F /* PBXTargetDependency */,
+			);
+			name = "Grid Tests";
+			productName = "Grid iOSTests";
+			productReference = 00EEE93B2754316F00E53E2F /* Grid Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00EEE9532754318B00E53E2F /* Grid macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EEE95C2754318B00E53E2F /* Build configuration list for PBXNativeTarget "Grid macOS" */;
+			buildPhases = (
+				00EEE94F2754318B00E53E2F /* Headers */,
+				00EEE9502754318B00E53E2F /* Sources */,
+				00EEE9512754318B00E53E2F /* Frameworks */,
+				00EEE9522754318B00E53E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grid macOS";
+			productName = "Grid macOS";
+			productReference = 00EEE9542754318B00E53E2F /* Grid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		00EEE9702754389700E53E2F /* ECS macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EEE9862754389700E53E2F /* Build configuration list for PBXNativeTarget "ECS macOS" */;
+			buildPhases = (
+				00EEE96C2754389700E53E2F /* Headers */,
+				00EEE96D2754389700E53E2F /* Sources */,
+				00EEE96E2754389700E53E2F /* Frameworks */,
+				00EEE96F2754389700E53E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ECS macOS";
+			productName = "ECS macOS";
+			productReference = 00EEE9712754389700E53E2F /* ECS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		00EEE9772754389700E53E2F /* ECS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EEE9892754389700E53E2F /* Build configuration list for PBXNativeTarget "ECS Tests" */;
+			buildPhases = (
+				00EEE9742754389700E53E2F /* Sources */,
+				00EEE9752754389700E53E2F /* Frameworks */,
+				00EEE9762754389700E53E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EEE97B2754389700E53E2F /* PBXTargetDependency */,
+				00EEE97D2754389700E53E2F /* PBXTargetDependency */,
+			);
+			name = "ECS Tests";
+			productName = "ECS macOSTests";
+			productReference = 00EEE9782754389700E53E2F /* ECS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00EEE9B12754396700E53E2F /* ECS iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EEE9BA2754396700E53E2F /* Build configuration list for PBXNativeTarget "ECS iOS" */;
+			buildPhases = (
+				00EEE9AD2754396700E53E2F /* Headers */,
+				00EEE9AE2754396700E53E2F /* Sources */,
+				00EEE9AF2754396700E53E2F /* Frameworks */,
+				00EEE9B02754396700E53E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ECS iOS";
+			productName = "ECS iOS";
+			productReference = 00EEE9B22754396700E53E2F /* ECS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -151,14 +512,34 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					00B093C72736FC4B0056F916 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 					00B093D82736FC4C0056F916 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					00EEE9332754316F00E53E2F = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					00EEE93A2754316F00E53E2F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					00EEE9532754318B00E53E2F = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					00EEE9702754389700E53E2F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					00EEE9772754389700E53E2F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					00EEE9B12754396700E53E2F = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -177,6 +558,12 @@
 			targets = (
 				00B093C72736FC4B0056F916 /* Space Miner iOS */,
 				00B093D82736FC4C0056F916 /* Space Miner macOS */,
+				00EEE9332754316F00E53E2F /* Grid iOS */,
+				00EEE9532754318B00E53E2F /* Grid macOS */,
+				00EEE93A2754316F00E53E2F /* Grid Tests */,
+				00EEE9B12754396700E53E2F /* ECS iOS */,
+				00EEE9702754389700E53E2F /* ECS macOS */,
+				00EEE9772754389700E53E2F /* ECS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +590,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00EEE9322754316F00E53E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9392754316F00E53E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9522754318B00E53E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE96F2754389700E53E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9762754389700E53E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9B02754396700E53E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -226,7 +655,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00EEE9302754316F00E53E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9372754316F00E53E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EEE9432754316F00E53E2F /* GridTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9502754318B00E53E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE96D2754389700E53E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9742754389700E53E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EEE9BE275439B300E53E2F /* ECSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EEE9AE2754396700E53E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00EEE93E2754316F00E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9332754316F00E53E2F /* Grid iOS */;
+			targetProxy = 00EEE93D2754316F00E53E2F /* PBXContainerItemProxy */;
+		};
+		00EEE9592754318B00E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9532754318B00E53E2F /* Grid macOS */;
+			targetProxy = 00EEE9582754318B00E53E2F /* PBXContainerItemProxy */;
+		};
+		00EEE97B2754389700E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9702754389700E53E2F /* ECS macOS */;
+			targetProxy = 00EEE97A2754389700E53E2F /* PBXContainerItemProxy */;
+		};
+		00EEE97D2754389700E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B093D82736FC4C0056F916 /* Space Miner macOS */;
+			targetProxy = 00EEE97C2754389700E53E2F /* PBXContainerItemProxy */;
+		};
+		00EEE9832754389700E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9702754389700E53E2F /* ECS macOS */;
+			targetProxy = 00EEE9822754389700E53E2F /* PBXContainerItemProxy */;
+		};
+		00EEE9B72754396700E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9B12754396700E53E2F /* ECS iOS */;
+			targetProxy = 00EEE9B62754396700E53E2F /* PBXContainerItemProxy */;
+		};
+		00EEE9CF27543AFD00E53E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B093D82736FC4C0056F916 /* Space Miner macOS */;
+			targetProxy = 00EEE9CE27543AFD00E53E2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		00B093CF2736FC4B0056F916 /* Main.storyboard */ = {
@@ -388,7 +899,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.Space-Miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
 				PRODUCT_NAME = "Space Miner";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -418,7 +929,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.Space-Miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
 				PRODUCT_NAME = "Space Miner";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -434,12 +945,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Space Miner macOS/Space_Miner_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2NBF8K2F9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -449,7 +962,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.Space-Miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
 				PRODUCT_NAME = "Space Miner";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -463,12 +976,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Space Miner macOS/Space_Miner_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2NBF8K2F9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -478,11 +993,380 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.Space-Miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
 				PRODUCT_NAME = "Space Miner";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00EEE94A2754316F00E53E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.grid";
+				PRODUCT_MODULE_NAME = Grid;
+				PRODUCT_NAME = Grid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00EEE94B2754316F00E53E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.grid";
+				PRODUCT_MODULE_NAME = Grid;
+				PRODUCT_NAME = Grid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		00EEE94D2754316F00E53E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.grid.Grid-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00EEE94E2754316F00E53E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.grid.Grid-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00EEE95D2754318B00E53E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
+				PRODUCT_MODULE_NAME = Grid;
+				PRODUCT_NAME = Grid;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00EEE95E2754318B00E53E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
+				PRODUCT_MODULE_NAME = Grid;
+				PRODUCT_NAME = Grid;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		00EEE9872754389700E53E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.ecs";
+				PRODUCT_MODULE_NAME = ECS;
+				PRODUCT_NAME = ECS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00EEE9882754389700E53E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.ecs";
+				PRODUCT_MODULE_NAME = ECS;
+				PRODUCT_NAME = ECS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		00EEE98A2754389700E53E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.ecs.ECS-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00EEE98B2754389700E53E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.ecs.ECS-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00EEE9BB2754396700E53E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.ecs";
+				PRODUCT_MODULE_NAME = ECS;
+				PRODUCT_NAME = ECS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00EEE9BC2754396700E53E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.ecs";
+				PRODUCT_MODULE_NAME = ECS;
+				PRODUCT_NAME = ECS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -512,6 +1396,60 @@
 			buildConfigurations = (
 				00B093EF2736FC4C0056F916 /* Debug */,
 				00B093F02736FC4C0056F916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EEE9492754316F00E53E2F /* Build configuration list for PBXNativeTarget "Grid iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EEE94A2754316F00E53E2F /* Debug */,
+				00EEE94B2754316F00E53E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EEE94C2754316F00E53E2F /* Build configuration list for PBXNativeTarget "Grid Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EEE94D2754316F00E53E2F /* Debug */,
+				00EEE94E2754316F00E53E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EEE95C2754318B00E53E2F /* Build configuration list for PBXNativeTarget "Grid macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EEE95D2754318B00E53E2F /* Debug */,
+				00EEE95E2754318B00E53E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EEE9862754389700E53E2F /* Build configuration list for PBXNativeTarget "ECS macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EEE9872754389700E53E2F /* Debug */,
+				00EEE9882754389700E53E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EEE9892754389700E53E2F /* Build configuration list for PBXNativeTarget "ECS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EEE98A2754389700E53E2F /* Debug */,
+				00EEE98B2754389700E53E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EEE9BA2754396700E53E2F /* Build configuration list for PBXNativeTarget "ECS iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EEE9BB2754396700E53E2F /* Debug */,
+				00EEE9BC2754396700E53E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
