@@ -30,6 +30,20 @@
 		00EEE9B92754396700E53E2F /* ECS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9B22754396700E53E2F /* ECS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00EEE9BE275439B300E53E2F /* ECSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE99F275438BD00E53E2F /* ECSTests.swift */; };
 		00EEE9D127543B7700E53E2F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; };
+		00EEE9EB27543D0500E53E2F /* GridUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E627543D0500E53E2F /* GridUnit.swift */; };
+		00EEE9EC27543D0500E53E2F /* GridUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E627543D0500E53E2F /* GridUnit.swift */; };
+		00EEE9ED27543D0500E53E2F /* HexagonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E727543D0500E53E2F /* HexagonCell.swift */; };
+		00EEE9EE27543D0500E53E2F /* HexagonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E727543D0500E53E2F /* HexagonCell.swift */; };
+		00EEE9EF27543D0500E53E2F /* HexagonOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */; };
+		00EEE9F027543D0500E53E2F /* HexagonOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */; };
+		00EEE9F127543D0500E53E2F /* CubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */; };
+		00EEE9F227543D0500E53E2F /* CubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */; };
+		00EEE9F327543D0500E53E2F /* CubicVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9EA27543D0500E53E2F /* CubicVector.swift */; };
+		00EEE9F427543D0500E53E2F /* CubicVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9EA27543D0500E53E2F /* CubicVector.swift */; };
+		00EEE9F62755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */; };
+		00EEE9F72755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */; };
+		00EEE9F92755742700E53E2F /* CubicSystemConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */; };
+		00EEE9FA2755742700E53E2F /* CubicSystemConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +146,13 @@
 		00EEE9782754389700E53E2F /* ECS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ECS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EEE99F275438BD00E53E2F /* ECSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECSTests.swift; sourceTree = "<group>"; };
 		00EEE9B22754396700E53E2F /* ECS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE9E627543D0500E53E2F /* GridUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridUnit.swift; sourceTree = "<group>"; };
+		00EEE9E727543D0500E53E2F /* HexagonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonCell.swift; sourceTree = "<group>"; };
+		00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonOrientation.swift; sourceTree = "<group>"; };
+		00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCoordinate.swift; sourceTree = "<group>"; };
+		00EEE9EA27543D0500E53E2F /* CubicVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicVector.swift; sourceTree = "<group>"; };
+		00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCubicCoordinateRepresentable.swift; sourceTree = "<group>"; };
+		00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicSystemConstraint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +309,13 @@
 		00EEE9612754328900E53E2F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				00EEE9E627543D0500E53E2F /* GridUnit.swift */,
+				00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */,
+				00EEE9EA27543D0500E53E2F /* CubicVector.swift */,
+				00EEE9E727543D0500E53E2F /* HexagonCell.swift */,
+				00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */,
+				00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */,
+				00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -659,6 +687,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EEE9EF27543D0500E53E2F /* HexagonOrientation.swift in Sources */,
+				00EEE9ED27543D0500E53E2F /* HexagonCell.swift in Sources */,
+				00EEE9F127543D0500E53E2F /* CubicCoordinate.swift in Sources */,
+				00EEE9F327543D0500E53E2F /* CubicVector.swift in Sources */,
+				00EEE9F92755742700E53E2F /* CubicSystemConstraint.swift in Sources */,
+				00EEE9F62755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */,
+				00EEE9EB27543D0500E53E2F /* GridUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +709,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EEE9F027543D0500E53E2F /* HexagonOrientation.swift in Sources */,
+				00EEE9EE27543D0500E53E2F /* HexagonCell.swift in Sources */,
+				00EEE9F227543D0500E53E2F /* CubicCoordinate.swift in Sources */,
+				00EEE9F427543D0500E53E2F /* CubicVector.swift in Sources */,
+				00EEE9FA2755742700E53E2F /* CubicSystemConstraint.swift in Sources */,
+				00EEE9F72755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */,
+				00EEE9EC27543D0500E53E2F /* GridUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +984,7 @@
 		00B093EF2736FC4C0056F916 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Space Miner macOS/Space_Miner_macOS.entitlements";
@@ -973,6 +1016,7 @@
 		00B093F02736FC4C0056F916 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Space Miner macOS/Space_Miner_macOS.entitlements";
@@ -1074,6 +1118,7 @@
 		00EEE94D2754316F00E53E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2NBF8K2F9;
@@ -1098,6 +1143,7 @@
 		00EEE94E2754316F00E53E2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2NBF8K2F9;
