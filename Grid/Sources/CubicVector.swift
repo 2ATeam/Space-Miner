@@ -110,3 +110,11 @@ public func *= (_ vector: inout CubicVector, _ multiplier: GridUnit) {
 public prefix func - (_ vector: CubicVector) -> CubicVector {
     vector * -1
 }
+
+// Placed here to due to fileprivate access to CubicVector's init.
+public func - (_ lhs: CubicCoordinate, _ rhs: CubicCoordinate) -> CubicVector {
+    // Subtracting a valid cubic coordinate from another valid coordinate will always result in a valid cubic vector.
+    try! .init(q: lhs.q - rhs.q,
+               r: lhs.r - rhs.r,
+               s: lhs.s - rhs.s)
+}

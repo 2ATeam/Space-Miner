@@ -44,3 +44,12 @@ public func - (coord: CubicCoordinate, vector: CubicVector) -> CubicCoordinate {
                r: coord.r - vector.r,
                s: coord.s - vector.s)
 }
+
+public extension CubicCoordinate {
+    
+    /// Calculates distance between `self` and the `other` coordinate.
+    func distance(to other: CubicCoordinate) -> UnsignedGridUnit {
+        let vector = self - other
+        return UnsignedGridUnit(max(abs(vector.q), abs(vector.r), abs(vector.s)))
+    }
+}
