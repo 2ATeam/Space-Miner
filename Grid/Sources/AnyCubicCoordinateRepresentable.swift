@@ -1,18 +1,21 @@
-/// An object that can be represented in cubic coordinate system using 3 coordinates `(q, s, r)`.
+/// An object that can be represented in cubic coordinate system using 3 coordinates `(q, r, s)`.
 /// - Seealso: https://www.redblobgames.com/grids/hexagons/#coordinates-cube
 public protocol AnyCubicCoordinateRepresentable: Hashable {
     
+    associatedtype CoordinateUnit where CoordinateUnit: Hashable,
+                                        CoordinateUnit: SignedNumeric
+    
     /// Coordinate on a q-axis in cubic system.
     /// - Seealso: `HexagonOrientation`.
-    var q: GridUnit { get }
+    var q: CoordinateUnit { get }
     
     /// Coordinate on a r-axis in cubic system.
     /// - Seealso: `HexagonOrientation`.
-    var r: GridUnit { get }
+    var r: CoordinateUnit { get }
     
     /// Coordinate on a s-axis in cubic system.
     /// - Seealso: `HexagonOrientation`.
-    var s: GridUnit { get }
+    var s: CoordinateUnit { get }
 }
 
 // MARK: - Hashable
