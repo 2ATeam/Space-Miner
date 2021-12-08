@@ -6,13 +6,13 @@ public protocol AnyCubicCoordinateRepresentable: Hashable {
     /// - Seealso: `HexagonOrientation`.
     var q: GridUnit { get }
     
+    /// Coordinate on a r-axis in cubic system.
+    /// - Seealso: `HexagonOrientation`.
+    var r: GridUnit { get }
+    
     /// Coordinate on a s-axis in cubic system.
     /// - Seealso: `HexagonOrientation`.
     var s: GridUnit { get }
-    
-    /// Coordinate on a r-axis in cubic system.
-    /// - Seealso: `HexagonOrientation`.
-    var r: GridUnit { get }    
 }
 
 // MARK: - Hashable
@@ -20,8 +20,8 @@ extension AnyCubicCoordinateRepresentable {
     
     public func hash(into hasher: inout Hasher) {
         hasher.combine(q)
-        hasher.combine(s)
         hasher.combine(r)
+        hasher.combine(s)
     }
 }
 

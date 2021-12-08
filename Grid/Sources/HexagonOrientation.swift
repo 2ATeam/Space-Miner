@@ -2,7 +2,7 @@ public enum HexagonOrientation: String, Codable {
     
     /// Hexagons are positioned in a way that their base is a vertice (e.g. hexagons are "staying on a vertice" - ⬢).
     ///
-    /// In this orientation a cubic coordinate system is aligned with three-dimensional axes, so that:
+    /// In this orientation a cubic coordinate system is aligned withprojection of  three-dimensional axes, so that:
     /// - X-axis corresponds to `q-axis` (direction: `-↙↗+`)
     /// - Y-axis corresponds to `s-axis` (direction: `+↖↘-`)
     /// - Z-axis corresponds to `r-axis` (direction: `+↓↑-`)
