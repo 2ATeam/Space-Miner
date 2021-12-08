@@ -52,4 +52,30 @@ public extension CubicCoordinate {
         let vector = self - other
         return UnsignedGridUnit(max(abs(vector.q), abs(vector.r), abs(vector.s)))
     }
+    
+    /// Calculates shortest path between `self` and the `other` coordinate.
+    func path(to other: CubicCoordinate) -> [CubicCoordinate] {
+        let distance = self.distance(to: other)
+        
+        let fSelf = FloatCubicCoordinate(self)
+        let fOther = FloatCubicCoordinate(other)
+        let fDistance = Float(distance)
+        
+        func interpolate(from: Float, to: Float, portion: Float) -> Float {
+            from + (from - to) * portion
+        }
+        
+        return (0...distance).lazy
+            .map { Float($0)/fDistance }
+            .map { FloatCubicCoordinate(q: interpolate(from: fSelf.q,
+                                                       to: fOther.q,
+                                                       portion: $0),
+                                        r: interpolate(from: fSelf.r,
+                                                       to: fOther.r,
+                                                       portion: $0),
+                                        s: interpolate(from: fSelf.s,
+                                                       to: fOther.s,
+                                                       portion: $0)) }
+            .map { $0.rounded() }
+    }
 }
