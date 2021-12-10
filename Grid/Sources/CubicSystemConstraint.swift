@@ -8,7 +8,9 @@ enum CubicSystemConstraint: Error {
     case zeroSum
     
     /// Validates given Cubic coordinates and throws the first violated constraint if any.
-    static func validate(q: GridUnit, r: GridUnit, s: GridUnit) throws {
+    static func validate<Unit>(q: Unit, r: Unit, s: Unit) throws where Unit: Hashable,
+                                                                       Unit: AdditiveArithmetic,
+                                                                       Unit: ExpressibleByIntegerLiteral {
         if (q + r + s) != 0 {
             throw CubicSystemConstraint.zeroSum
         }

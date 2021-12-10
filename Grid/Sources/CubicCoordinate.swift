@@ -54,7 +54,7 @@ public extension CubicCoordinate {
     }
     
     /// Calculates shortest path between `self` and the `other` coordinate.
-    func path(to other: CubicCoordinate) -> [CubicCoordinate] {
+    func line(to other: CubicCoordinate) -> [CubicCoordinate] {
         let distance = self.distance(to: other)
         
         let fSelf = FloatCubicCoordinate(self)
@@ -77,5 +77,9 @@ public extension CubicCoordinate {
                                                        to: fOther.s,
                                                        portion: $0)) }
             .map { $0.rounded() }
+    }
+    
+    func range(within radius: UnsignedGridUnit) -> CubicRange {
+        .init(center: self, radius: radius)
     }
 }

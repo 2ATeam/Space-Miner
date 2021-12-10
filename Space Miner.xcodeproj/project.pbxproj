@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		005C327927614BF500A9D834 /* FloatCubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */; };
 		005C327A27614BF500A9D834 /* FloatCubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */; };
+		005C327C276153FB00A9D834 /* CubicRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327B276153FB00A9D834 /* CubicRange.swift */; };
+		005C327D276153FB00A9D834 /* CubicRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327B276153FB00A9D834 /* CubicRange.swift */; };
 		00B093CC2736FC4B0056F916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B093CB2736FC4B0056F916 /* AppDelegate.swift */; };
 		00B093CE2736FC4B0056F916 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B093CD2736FC4B0056F916 /* GameViewController.swift */; };
 		00B093D12736FC4B0056F916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B093CF2736FC4B0056F916 /* Main.storyboard */; };
@@ -128,6 +130,7 @@
 
 /* Begin PBXFileReference section */
 		005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatCubicCoordinate.swift; sourceTree = "<group>"; };
+		005C327B276153FB00A9D834 /* CubicRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicRange.swift; sourceTree = "<group>"; };
 		00B093C12736FC480056F916 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		00B093C22736FC480056F916 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		00B093C32736FC4B0056F916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -320,6 +323,7 @@
 				00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */,
 				00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */,
 				00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */,
+				005C327B276153FB00A9D834 /* CubicRange.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -697,6 +701,7 @@
 				00EEE9F127543D0500E53E2F /* CubicCoordinate.swift in Sources */,
 				00EEE9F327543D0500E53E2F /* CubicVector.swift in Sources */,
 				00EEE9F92755742700E53E2F /* CubicSystemConstraint.swift in Sources */,
+				005C327C276153FB00A9D834 /* CubicRange.swift in Sources */,
 				00EEE9F62755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */,
 				00EEE9EB27543D0500E53E2F /* GridUnit.swift in Sources */,
 			);
@@ -720,6 +725,7 @@
 				00EEE9F227543D0500E53E2F /* CubicCoordinate.swift in Sources */,
 				00EEE9F427543D0500E53E2F /* CubicVector.swift in Sources */,
 				00EEE9FA2755742700E53E2F /* CubicSystemConstraint.swift in Sources */,
+				005C327D276153FB00A9D834 /* CubicRange.swift in Sources */,
 				00EEE9F72755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */,
 				00EEE9EC27543D0500E53E2F /* GridUnit.swift in Sources */,
 			);
