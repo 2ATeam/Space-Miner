@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00EEE9772754389700E53E2F"
-               BuildableName = "ECS macOSTests.xctest"
+               BuildableName = "ECS Tests.xctest"
                BlueprintName = "ECS Tests"
                ReferencedContainer = "container:Space Miner.xcodeproj">
             </BuildableReference>

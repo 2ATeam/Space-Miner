@@ -56,7 +56,6 @@ public struct CubicVector: AnyCubicCoordinateRepresentable {
     /// - Note: Use `-s` to point in the opposite direction.
     public static let s = try! CubicVector(q: -1, r: -1, s: 2)
     
-    
     /// *Unit vector* that points in the positive direction of `q-axis` and negative `s-axis`.
     ///
     /// This corresponds to:
