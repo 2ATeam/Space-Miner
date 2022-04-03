@@ -1,11 +1,5 @@
-//
-//  GameController.swift
-//  Space Miner Shared
-//
-//  Created by Arkadii Hlushchevskyi on 06.11.2021.
-//
-
 import SceneKit
+import SpriteKit
 
 #if os(watchOS)
     import WatchKit
@@ -24,9 +18,13 @@ class GameController: NSObject, SCNSceneRendererDelegate {
     let scene: SCNScene
     let sceneRenderer: SCNSceneRenderer
     
+    private var tiles: SKTileMapNode!
+    
+    private var tileScale: CGFloat = 1
+    
     init(sceneRenderer renderer: SCNSceneRenderer) {
         sceneRenderer = renderer
-        scene = SCNScene(named: "Art.scnassets/ship.scn")!
+        scene = SCNScene(named: "Art.scnassets/grid.scn")!
         
         super.init()
         
@@ -41,7 +39,11 @@ class GameController: NSObject, SCNSceneRendererDelegate {
                                      SCNImage(named: "front")!,
                                      SCNImage(named: "back")!
                                     ]
+               
+        
+        scene.rootNode.addChildNode(GridNode(radius: 3))
     }
+    
     
     func highlightNodes(atPoint point: CGPoint) {
         let hitResults = self.sceneRenderer.hitTest(point, options: [:])
