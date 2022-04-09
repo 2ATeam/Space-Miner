@@ -41,7 +41,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
                                     ]
                
         
-        scene.rootNode.addChildNode(GridNode(radius: 3))
+        scene.rootNode.addChildNode(GridNode(radius: 10))
     }
     
     

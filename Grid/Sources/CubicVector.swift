@@ -37,21 +37,21 @@ public struct CubicVector: AnyCubicCoordinateRepresentable {
     ///
     /// This corresponds to "diagonal" direction that is parallel to:
     /// - *Top* and *Bottom* edges in `edge` (⬣)  orientation
-    /// - *Top-right* and *Bottom-left* edges in `vertice` (⬢) orientation.
+    /// - *Top-left* and *Bottom-right* edges in `vertice` (⬢) orientation.
     /// - Note: Use `-q` to point in the opposite direction.
     public static let q = try! CubicVector(q: 2, r: -1, s: -1)
     
     /// *Unit vector* that points in the positive direction of `r-axis`.
     ///
     /// This corresponds to "diagonal" direction that is parallel to:
-    /// - *Top-right* and *Bottom-left* edges in `edge` (⬣)  orientation
-    /// - *Top* and *Bottom* edges in `vertice` (⬢) orientation.
+    /// - *Top-left* and *Bottom-right* edges in `edge` (⬣)  orientation
+    /// - *Left* and *Right* edges in `vertice` (⬢) orientation.
     /// - Note: Use `-r` to point in the opposite direction.
     public static let r = try! CubicVector(q: -1, r: 2, s: -1)
     
     /// *Unit vector* that points in the positive direction of `s-axis`.
     ///
-    /// This corresponds to "diagonal" direction that is parallel to *Top-left* and *Bottom-right*
+    /// This corresponds to "diagonal" direction that is parallel to *Top-right* and *Bottom-left*
     /// in both `edge` (⬣) and `vertice` (⬢) orientations.
     /// - Note: Use `-s` to point in the opposite direction.
     public static let s = try! CubicVector(q: -1, r: -1, s: 2)
@@ -60,7 +60,7 @@ public struct CubicVector: AnyCubicCoordinateRepresentable {
     ///
     /// This corresponds to:
     /// - *Down-right* direction in `edge` (⬣) orientation
-    /// - *Rght* direction in `vertice` (⬢) orientation.
+    /// - *Right* direction in `vertice` (⬢) orientation.
     public static let qs = try! CubicVector(q: 1, s: -1)
     
     public fileprivate(set) var q: GridUnit

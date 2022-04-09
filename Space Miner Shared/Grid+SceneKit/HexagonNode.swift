@@ -1,60 +1,45 @@
 import SceneKit
-import TSKit_Core
+import Grid
 
-class GridNode: SCNNode {
-        
-    convenience override init() {
-        self.init(radius: 1)
-    }
+class HexagonNode: SCNNode {
     
-    /// - Parameter radius: Number of layers (circles) of hexagons that will compose the grid.
-    init(radius: Int) {
+    let coordinate: CubicCoordinate
+     
+    init(coordinate: CubicCoordinate, geometry: HexagonGeometry) {
+        self.coordinate = coordinate
         super.init()
-        func hexagonNode(_ hexagon: HexagonGeometry, at position: SCNVector3) -> SCNNode {
-            let node = SCNNode(geometry: hexagon)
-            node.geometry?.materials.first?.diffuse.contents = SCNColor.red
-            node.position = position
-            return node
-        }
-        let hexagon = HexagonGeometry()
-        let hexHeight = hexagon.height
-        let hexRadius = hexagon.radius
-        let root = CGPoint()
-        let up = CGPoint(x: 0, y: 2 * hexHeight)
-        let down = CGPoint(x: 0, y: -2 * hexHeight)
-        let upRight = CGPoint(x: 1.5 * hexRadius, y: hexHeight)
-        let upLeft = CGPoint(x: -1.5 * hexRadius, y: hexHeight)
-        let downRight = CGPoint(x: 1.5 * hexRadius, y: -hexHeight)
-        let downLeft = CGPoint(x: -1.5 * hexRadius, y: -hexHeight)
-        
-        let path = [
-            downRight,
-            down,
-            downLeft,
-            upLeft,
-            up,
-            upRight
-        ]
-        for circleIndex in 0..<radius {
-            /// Number of hexagons that should be added per side.
-            let steps = circleIndex
-            
-            let startingHexPosition = root + (up * CGFloat(steps))
-            let points = path.flatMap { Array(repeating: $0, count: steps) }
-                .reduce([CGPoint]()) { res, direction in
-                    res.appending((res.last ?? startingHexPosition) + direction)
-                }
-                
-                points.map {
-                    hexagonNode(hexagon, at: $0.vector)
-                }.forEach(addChildNode)
-        }
+        self.geometry = geometry
+//        addDebugInfo()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("GridNode cannot be created in Scene Editor")
+        fatalError("HexagonNode cannot be created in Scene Editor")
     }
     
+    private func addDebugInfo() {
+        func label(_ text: String) -> SCNNode {
+            let labelGeometry = SCNText(string: text, extrusionDepth: 0)
+            labelGeometry.font = .systemFont(ofSize: 1)
+            let label = SCNNode(geometry: labelGeometry)
+            label.scale = .init(0.3, 0.3, 0.3)
+            return label
+        }
+        
+        let q = label("\(coordinate.q)")
+        q.geometry?.firstMaterial?.diffuse.contents = SCNColor.systemGreen
+        q.position = .init(-0.1, 0.1, 0)
+        self.addChildNode(q)
+        
+        let r = label("\(coordinate.r)")
+        r.geometry?.firstMaterial?.diffuse.contents = SCNColor.systemBlue
+        r.position = .init(0.4, -0.7, 0)
+        self.addChildNode(r)
+        
+        let s = label("\(coordinate.s)")
+        s.geometry?.firstMaterial?.diffuse.contents = SCNColor.purple
+        s.position = .init(-0.6, -0.7, 0)
+        self.addChildNode(s)
+    }
 }
 
 class HexagonGeometry: SCNGeometry {
@@ -141,30 +126,5 @@ class HexagonGeometry: SCNGeometry {
             self.height = height
             self.vertices = vertices
         }
-    }
-}
-
-extension CGPoint {
-    
-    static func + (_ lhs: CGPoint, _ rhs: CGPoint) -> CGPoint {
-        .init(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
-    }
-    
-    static func * (_ point: CGPoint, _ constant: CGFloat) -> CGPoint {
-        .init(x: point.x * constant, y: point.y * constant)
-    }
-}
-
-extension CGPoint {
-    
-    var vector: SCNVector3 {
-        .init(self)
-    }
-}
-
-extension SCNVector3 {
-    
-    init(_ point: CGPoint) {
-        self.init(point.x, point.y, 0)
     }
 }
