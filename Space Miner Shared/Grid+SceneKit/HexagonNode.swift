@@ -3,13 +3,52 @@ import Grid
 
 class HexagonNode: SCNNode {
     
+    class Neighbors {
+        
+        fileprivate(set) var sr: HexagonNode?
+        fileprivate(set) var qr: HexagonNode?
+        fileprivate(set) var qs: HexagonNode?
+        fileprivate(set) var rs: HexagonNode?
+        fileprivate(set) var rq: HexagonNode?
+        fileprivate(set) var sq: HexagonNode?
+        
+        fileprivate convenience init() {
+            self.init(sr: nil, qr: nil, qs: nil, rs: nil, rq: nil, sq: nil)
+        }
+        
+        init(sr: HexagonNode?,
+             qr: HexagonNode?,
+             qs: HexagonNode?,
+             rs: HexagonNode?,
+             rq: HexagonNode?,
+             sq: HexagonNode?) {
+            self.sr = sr
+            self.qr = qr
+            self.qs = qs
+            self.rs = rs
+            self.rq = rq
+            self.sq = sq
+        }
+    }
+    
     let coordinate: CubicCoordinate
+    
+    var neighbors: Neighbors = .init() {
+        didSet {
+            neighbors.sr?.neighbors.rs = self
+            neighbors.qr?.neighbors.rq = self
+            neighbors.qs?.neighbors.sq = self
+            neighbors.rs?.neighbors.sr = self
+            neighbors.rq?.neighbors.qr = self
+            neighbors.sq?.neighbors.qs = self
+        }
+    }
      
     init(coordinate: CubicCoordinate, geometry: HexagonGeometry) {
         self.coordinate = coordinate
         super.init()
         self.geometry = geometry
-//        addDebugInfo()
+        addDebugInfo()
     }
     
     required init?(coder: NSCoder) {

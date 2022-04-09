@@ -18,6 +18,8 @@ class GridNode: SCNNode {
         }
     }
     
+    private var hexagons: [CubicCoordinate: HexagonNode]!
+    
     /// - Parameter radius: Number of layers (circles) of hexagons that will compose the grid.
     init(radius: Int, outline: SCNColor = .red) {
         self.radius = radius
@@ -47,6 +49,8 @@ class GridNode: SCNNode {
             up,
             upRight
         ]
+        
+        var nodes = [CubicCoordinate: HexagonNode]()
         for circleIndex in 0..<radius {
             /// Number of hexagons that should be added per side.
             let steps = circleIndex
@@ -61,15 +65,26 @@ class GridNode: SCNNode {
             // there will be no path, only one hex
             points.map {
                 hexagonNode(with: hexagon, at: $0.coordinate, placedAt: $0.position.vector)
-            }.forEach(addChildNode)
+            }.forEach {
+                addChildNode($0)
+                nodes[$0.coordinate] = $0
+                $0.neighbors = .init(sr: nodes[$0.coordinate + .sr],
+                                     qr: nodes[$0.coordinate + .qr],
+                                     qs: nodes[$0.coordinate + .qs],
+                                     rs: nodes[$0.coordinate + .rs],
+                                     rq: nodes[$0.coordinate + .rq],
+                                     sq: nodes[$0.coordinate + .sq])
+            }
         }
+        
+        hexagons = nodes
     }
     
     required init?(coder: NSCoder) {
         fatalError("GridNode cannot be created in Scene Editor")
     }
     
-    func hexagonNode(with hexagon: HexagonGeometry,
+    private func hexagonNode(with hexagon: HexagonGeometry,
                      at coordinate: CubicCoordinate,
                      placedAt position: SCNVector3) -> HexagonNode {
         let node = HexagonNode(coordinate: coordinate, geometry: hexagon)
