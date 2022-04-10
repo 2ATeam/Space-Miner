@@ -48,17 +48,17 @@ class HexagonNode: SCNNode {
         self.coordinate = coordinate
         super.init()
         self.geometry = geometry
-        addDebugInfo()
+        addDebugInfo(ofSize: geometry.radius)
     }
     
     required init?(coder: NSCoder) {
         fatalError("HexagonNode cannot be created in Scene Editor")
     }
     
-    private func addDebugInfo() {
+    private func addDebugInfo(ofSize size: CGFloat) {
         func label(_ text: String) -> SCNNode {
             let labelGeometry = SCNText(string: text, extrusionDepth: 0)
-            labelGeometry.font = .systemFont(ofSize: 1)
+            labelGeometry.font = .systemFont(ofSize: size)
             let label = SCNNode(geometry: labelGeometry)
             label.scale = .init(0.3, 0.3, 0.3)
             return label
@@ -66,17 +66,17 @@ class HexagonNode: SCNNode {
         
         let q = label("\(coordinate.q)")
         q.geometry?.firstMaterial?.diffuse.contents = SCNColor.systemGreen
-        q.position = .init(-0.1, 0.1, 0)
+        q.position = .init(-0.1 * size, 0.3 * size, 0)
         self.addChildNode(q)
         
         let r = label("\(coordinate.r)")
         r.geometry?.firstMaterial?.diffuse.contents = SCNColor.systemBlue
-        r.position = .init(0.4, -0.7, 0)
+        r.position = .init(0.3 * size, -0.7 * size, 0)
         self.addChildNode(r)
         
         let s = label("\(coordinate.s)")
         s.geometry?.firstMaterial?.diffuse.contents = SCNColor.purple
-        s.position = .init(-0.6, -0.7, 0)
+        s.position = .init(-0.6 * size, -0.7 * size, 0)
         self.addChildNode(s)
     }
 }

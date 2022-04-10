@@ -26,7 +26,7 @@ class GridNode: SCNNode {
         self.outline = outline
         super.init()
         
-        let hexagon = HexagonGeometry()
+        let hexagon = HexagonGeometry(radius: 8)
         let hexHeight = hexagon.height
         let hexRadius = hexagon.radius
         

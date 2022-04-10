@@ -1,5 +1,6 @@
 import SceneKit
-import SpriteKit
+import TSKit_Core
+
 
 #if os(watchOS)
     import WatchKit
@@ -17,8 +18,6 @@ class GameController: NSObject, SCNSceneRendererDelegate {
 
     let scene: SCNScene
     let sceneRenderer: SCNSceneRenderer
-    
-    private var tiles: SKTileMapNode!
     
     private var tileScale: CGFloat = 1
     
@@ -48,26 +47,34 @@ class GameController: NSObject, SCNSceneRendererDelegate {
     func highlightNodes(atPoint point: CGPoint) {
         let hitResults = self.sceneRenderer.hitTest(point, options: [:])
         for result in hitResults {
-            // get its material
-            guard let material = result.node.geometry?.firstMaterial else {
-                return
-            }
+            guard let hexagon = result.node as? HexagonNode,
+                  let originalGeometry = hexagon.geometry as? HexagonGeometry,
+                  let originalMaterial = originalGeometry.firstMaterial else { return }
             
             // highlight it
             SCNTransaction.begin()
             SCNTransaction.animationDuration = 0.5
+            let highlightedGeometry = originalGeometry.copySelf()
+            let highlightedMaterial = originalMaterial.copySelf()
+            highlightedGeometry.firstMaterial = highlightedMaterial
+            hexagon.geometry = highlightedGeometry
             
             // on completion - unhighlight
             SCNTransaction.completionBlock = {
                 SCNTransaction.begin()
                 SCNTransaction.animationDuration = 0.5
+                highlightedMaterial.emission.contents = SCNColor.black
+                hexagon.position.z = 0
                 
-                material.emission.contents = SCNColor.black
-                
+                SCNTransaction.completionBlock = {
+                    hexagon.geometry = originalGeometry
+                }
+
                 SCNTransaction.commit()
             }
             
-            material.emission.contents = SCNColor.red
+            highlightedMaterial.emission.contents = SCNColor.green
+            hexagon.position.z = 0.01
             
             SCNTransaction.commit()
         }
@@ -77,4 +84,12 @@ class GameController: NSObject, SCNSceneRendererDelegate {
         // Called before each frame is rendered
     }
 
+}
+
+
+extension NSObject {
+    
+    func copySelf() -> Self {
+        copy() as! Self
+    }
 }
