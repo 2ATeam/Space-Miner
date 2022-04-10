@@ -21,6 +21,12 @@ class GameController: NSObject, SCNSceneRendererDelegate {
     
     private var tileScale: CGFloat = 1
     
+    private lazy var plane: SCNNode = {
+        let plane = SCNScene(named: "Art.scnassets/ship.scn")!.rootNode.childNode(withName: "ship", recursively: false)!
+        plane.rotation = .init(x: 1, y: 0, z: 0, w: .pi/2)
+        return plane
+    }()
+    
     init(sceneRenderer renderer: SCNSceneRenderer) {
         sceneRenderer = renderer
         scene = SCNScene(named: "Art.scnassets/grid.scn")!
@@ -39,8 +45,8 @@ class GameController: NSObject, SCNSceneRendererDelegate {
                                      SCNImage(named: "back")!
                                     ]
                
-        
-        scene.rootNode.addChildNode(GridNode(radius: 4))
+        scene.rootNode.addChildNode(GridNode(radius: 10))
+        scene.rootNode.addChildNode(plane)
     }
     
     
@@ -77,6 +83,24 @@ class GameController: NSObject, SCNSceneRendererDelegate {
             hexagon.position.z = 0.01
             
             SCNTransaction.commit()
+            
+            let turn = SCNAction.run { plane in
+                SCNTransaction.begin()
+                SCNTransaction.animationDuration = 0.5
+                plane.look(at: hexagon.position,
+                                up: .init(0, 0, 1),
+                                localFront: .init(0, 0, 1))
+                SCNTransaction.commit()
+            }
+            
+            let wait = SCNAction.wait(duration: 0.1)
+            
+            let move = SCNAction.move(to: hexagon.position,
+                                      duration: TimeInterval(hexagon.position.distance(to: self.plane.position) / 10))
+            move.timingMode = .easeInEaseOut
+            
+            plane.runAction(SCNAction.sequence([turn, wait, move]))
+            
         }
     }
     
@@ -93,3 +117,10 @@ extension NSObject {
         copy() as! Self
     }
 }
+
+extension SCNVector3 {
+    
+     func distance(to vector: SCNVector3) -> Float {
+        simd_distance(simd_float3(self), simd_float3(vector))
+     }
+ }

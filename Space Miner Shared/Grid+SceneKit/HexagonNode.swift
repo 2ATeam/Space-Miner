@@ -48,7 +48,7 @@ class HexagonNode: SCNNode {
         self.coordinate = coordinate
         super.init()
         self.geometry = geometry
-        addDebugInfo(ofSize: geometry.radius)
+//        addDebugInfo(ofSize: geometry.radius)
     }
     
     required init?(coder: NSCoder) {
