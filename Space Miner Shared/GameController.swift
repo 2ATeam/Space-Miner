@@ -107,7 +107,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         // Called before each frame is rendered
     }
-
+    
 }
 
 
@@ -117,10 +117,3 @@ extension NSObject {
         copy() as! Self
     }
 }
-
-extension SCNVector3 {
-    
-     func distance(to vector: SCNVector3) -> Float {
-        simd_distance(simd_float3(self), simd_float3(vector))
-     }
- }

@@ -94,28 +94,3 @@ class GridNode: SCNNode {
     }
     
 }
-
-extension CGPoint {
-    
-    var vector: SCNVector3 {
-        .init(self)
-    }
-}
-
-extension SCNVector3 {
-    
-    init(_ point: CGPoint) {
-        self.init(point.x, point.y, 0)
-    }
-}
-
-extension CGVector {
-    
-    static func + (_ lhs: CGPoint, _ rhs: CGVector) -> CGPoint {
-        .init(x: lhs.x + rhs.dx, y: lhs.y + rhs.dy)
-    }
-    
-    static func * (_ point: CGVector, _ constant: CGFloat) -> CGVector {
-        .init(dx: point.dx * constant, dy: point.dy * constant)
-    }
-}
