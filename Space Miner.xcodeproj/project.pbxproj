@@ -27,6 +27,8 @@
 		005C32802763966600A9D834 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327E2763966600A9D834 /* Grid.swift */; };
 		00836F282808CBA4000AAEE0 /* PointsEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F272808CBA4000AAEE0 /* PointsEx.swift */; };
 		00836F292808CBA4000AAEE0 /* PointsEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F272808CBA4000AAEE0 /* PointsEx.swift */; };
+		00836F2B2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */; };
+		00836F2C2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */; };
 		00B093CC2736FC4B0056F916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B093CB2736FC4B0056F916 /* AppDelegate.swift */; };
 		00B093CE2736FC4B0056F916 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B093CD2736FC4B0056F916 /* GameViewController.swift */; };
 		00B093D12736FC4B0056F916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B093CF2736FC4B0056F916 /* Main.storyboard */; };
@@ -139,6 +141,7 @@
 		005C327B276153FB00A9D834 /* CubicRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicRange.swift; sourceTree = "<group>"; };
 		005C327E2763966600A9D834 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		00836F272808CBA4000AAEE0 /* PointsEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsEx.swift; sourceTree = "<group>"; };
+		00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDebuggableNode.swift; sourceTree = "<group>"; };
 		00B093C12736FC480056F916 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		00B093C22736FC480056F916 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		00B093C32736FC4B0056F916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -269,6 +272,7 @@
 				00B093C12736FC480056F916 /* GameController.swift */,
 				00B093C22736FC480056F916 /* Art.scnassets */,
 				00B093C32736FC4B0056F916 /* Assets.xcassets */,
+				00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */,
 			);
 			path = "Space Miner Shared";
 			sourceTree = "<group>";
@@ -707,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B093CE2736FC4B0056F916 /* GameViewController.swift in Sources */,
+				00836F2B2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */,
 				002BF3E427FE38970027238F /* GridNode.swift in Sources */,
 				00B093E32736FC4C0056F916 /* GameController.swift in Sources */,
 				002BF3E527FE38970027238F /* HexagonNode.swift in Sources */,
@@ -720,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B093DE2736FC4C0056F916 /* GameViewController.swift in Sources */,
+				00836F2C2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */,
 				002BF3E627FE38980027238F /* GridNode.swift in Sources */,
 				00B093E42736FC4C0056F916 /* GameController.swift in Sources */,
 				002BF3E727FE38980027238F /* HexagonNode.swift in Sources */,

@@ -1,7 +1,7 @@
 import SceneKit
 import Grid
 
-class HexagonNode: SCNNode {
+class HexagonNode: SCNNode, AnyDebuggableNode {
     
     class Neighbors {
         
@@ -33,6 +33,10 @@ class HexagonNode: SCNNode {
     
     let coordinate: CubicCoordinate
     
+    var grid: GridNode? {
+        parent as? GridNode
+    }
+    
     var neighbors: Neighbors = .init() {
         didSet {
             neighbors.sr?.neighbors.rs = self
@@ -48,14 +52,14 @@ class HexagonNode: SCNNode {
         self.coordinate = coordinate
         super.init()
         self.geometry = geometry
-//        addDebugInfo(ofSize: geometry.radius)
     }
     
     required init?(coder: NSCoder) {
         fatalError("HexagonNode cannot be created in Scene Editor")
     }
     
-    private func addDebugInfo(ofSize size: CGFloat) {
+    func addDebugInfo() {
+        guard let size = (geometry as? HexagonGeometry)?.radius else { return }
         func label(_ text: String) -> SCNNode {
             let labelGeometry = SCNText(string: text, extrusionDepth: 0)
             labelGeometry.font = .systemFont(ofSize: size)

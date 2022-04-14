@@ -47,6 +47,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
                
         scene.rootNode.addChildNode(GridNode(radius: 10))
         scene.rootNode.addChildNode(plane)
+        scene.addDebugInfo()
     }
     
     
@@ -57,13 +58,15 @@ class GameController: NSObject, SCNSceneRendererDelegate {
                   let originalGeometry = hexagon.geometry as? HexagonGeometry,
                   let originalMaterial = originalGeometry.firstMaterial else { return }
             
+            let highlightedGeometry = originalGeometry.copySelf()
+            let highlightedMaterial = originalMaterial.copySelf()
+
+            highlightedGeometry.firstMaterial = highlightedMaterial
+            hexagon.geometry = highlightedGeometry
+            
             // highlight it
             SCNTransaction.begin()
             SCNTransaction.animationDuration = 0.5
-            let highlightedGeometry = originalGeometry.copySelf()
-            let highlightedMaterial = originalMaterial.copySelf()
-            highlightedGeometry.firstMaterial = highlightedMaterial
-            hexagon.geometry = highlightedGeometry
             
             // on completion - unhighlight
             SCNTransaction.completionBlock = {
@@ -71,6 +74,7 @@ class GameController: NSObject, SCNSceneRendererDelegate {
                 SCNTransaction.animationDuration = 0.5
                 highlightedMaterial.emission.contents = SCNColor.black
                 hexagon.position.z = 0
+                hexagon.scale = .init(1,1,1)
                 
                 SCNTransaction.completionBlock = {
                     hexagon.geometry = originalGeometry
@@ -80,7 +84,8 @@ class GameController: NSObject, SCNSceneRendererDelegate {
             }
             
             highlightedMaterial.emission.contents = SCNColor.green
-            hexagon.position.z = 0.01
+            hexagon.position.z = 0.5
+            hexagon.scale = .init(1.1, 1.1, 1.1)
             
             SCNTransaction.commit()
             

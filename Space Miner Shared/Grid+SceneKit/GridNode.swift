@@ -2,7 +2,7 @@ import SceneKit
 import TSKit_Core
 import Grid
 
-class GridNode: SCNNode {
+class GridNode: SCNNode, AnyDebuggableNode {
         
     let radius: Int
     
@@ -13,7 +13,7 @@ class GridNode: SCNNode {
     var outline: SCNColor {
         didSet {
             childNodes.forEach {
-                $0.geometry?.materials.first?.diffuse.contents = outline
+                $0.geometry?.firstMaterial?.diffuse.contents = outline
             }
         }
     }
@@ -88,9 +88,8 @@ class GridNode: SCNNode {
                      at coordinate: CubicCoordinate,
                      placedAt position: SCNVector3) -> HexagonNode {
         let node = HexagonNode(coordinate: coordinate, geometry: hexagon)
-        node.geometry?.materials.first?.diffuse.contents = outline
+        node.geometry?.firstMaterial?.diffuse.contents = outline
         node.position = position
         return node
     }
-    
 }
