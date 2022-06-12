@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002BF3D027FA5BE40027238F /* TSKit.Core in Frameworks */ = {isa = PBXBuildFile; productRef = 002BF3CF27FA5BE40027238F /* TSKit.Core */; };
+		002BF3D227FA5BFB0027238F /* TSKit.Core in Frameworks */ = {isa = PBXBuildFile; productRef = 002BF3D127FA5BFB0027238F /* TSKit.Core */; };
+		002BF3D827FE37E90027238F /* TSKit.Core in Frameworks */ = {isa = PBXBuildFile; productRef = 002BF3D727FE37E90027238F /* TSKit.Core */; };
+		002BF3DA27FE37EF0027238F /* TSKit.Core in Frameworks */ = {isa = PBXBuildFile; productRef = 002BF3D927FE37EF0027238F /* TSKit.Core */; };
+		002BF3E427FE38970027238F /* GridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A213D27F8DFCE00FE77B4 /* GridNode.swift */; };
+		002BF3E527FE38970027238F /* HexagonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BF3DF27FE38260027238F /* HexagonNode.swift */; };
+		002BF3E627FE38980027238F /* GridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A213D27F8DFCE00FE77B4 /* GridNode.swift */; };
+		002BF3E727FE38980027238F /* HexagonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BF3DF27FE38260027238F /* HexagonNode.swift */; };
+		002BF3E827FE38B70027238F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9342754316F00E53E2F /* Grid.framework */; };
+		002BF3E927FE38B70027238F /* Grid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9342754316F00E53E2F /* Grid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		002BF3EC27FE38BE0027238F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; };
+		002BF3ED27FE38BE0027238F /* Grid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		005C327927614BF500A9D834 /* FloatCubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */; };
+		005C327A27614BF500A9D834 /* FloatCubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */; };
+		005C327C276153FB00A9D834 /* CubicRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327B276153FB00A9D834 /* CubicRange.swift */; };
+		005C327D276153FB00A9D834 /* CubicRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327B276153FB00A9D834 /* CubicRange.swift */; };
+		005C327F2763966600A9D834 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327E2763966600A9D834 /* Grid.swift */; };
+		005C32802763966600A9D834 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C327E2763966600A9D834 /* Grid.swift */; };
+		00836F282808CBA4000AAEE0 /* PointsEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F272808CBA4000AAEE0 /* PointsEx.swift */; };
+		00836F292808CBA4000AAEE0 /* PointsEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F272808CBA4000AAEE0 /* PointsEx.swift */; };
+		00836F2B2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */; };
+		00836F2C2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */; };
 		00B093CC2736FC4B0056F916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B093CB2736FC4B0056F916 /* AppDelegate.swift */; };
 		00B093CE2736FC4B0056F916 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B093CD2736FC4B0056F916 /* GameViewController.swift */; };
 		00B093D12736FC4B0056F916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B093CF2736FC4B0056F916 /* Main.storyboard */; };
@@ -21,31 +43,46 @@
 		00B093E72736FC4C0056F916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B093C32736FC4B0056F916 /* Assets.xcassets */; };
 		00B093E82736FC4C0056F916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B093C32736FC4B0056F916 /* Assets.xcassets */; };
 		00EEE9432754316F00E53E2F /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9422754316F00E53E2F /* GridTests.swift */; };
-		00EEE95A2754318B00E53E2F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; };
-		00EEE95B2754318B00E53E2F /* Grid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00EEE9792754389700E53E2F /* ECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9712754389700E53E2F /* ECS.framework */; };
-		00EEE9842754389700E53E2F /* ECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9712754389700E53E2F /* ECS.framework */; };
-		00EEE9852754389700E53E2F /* ECS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9712754389700E53E2F /* ECS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00EEE9B82754396700E53E2F /* ECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9B22754396700E53E2F /* ECS.framework */; };
-		00EEE9B92754396700E53E2F /* ECS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9B22754396700E53E2F /* ECS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00EEE9BE275439B300E53E2F /* ECSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE99F275438BD00E53E2F /* ECSTests.swift */; };
 		00EEE9D127543B7700E53E2F /* Grid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEE9542754318B00E53E2F /* Grid.framework */; };
+		00EEE9EB27543D0500E53E2F /* GridUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E627543D0500E53E2F /* GridUnit.swift */; };
+		00EEE9EC27543D0500E53E2F /* GridUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E627543D0500E53E2F /* GridUnit.swift */; };
+		00EEE9ED27543D0500E53E2F /* HexagonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E727543D0500E53E2F /* HexagonCell.swift */; };
+		00EEE9EE27543D0500E53E2F /* HexagonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E727543D0500E53E2F /* HexagonCell.swift */; };
+		00EEE9EF27543D0500E53E2F /* HexagonOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */; };
+		00EEE9F027543D0500E53E2F /* HexagonOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */; };
+		00EEE9F127543D0500E53E2F /* CubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */; };
+		00EEE9F227543D0500E53E2F /* CubicCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */; };
+		00EEE9F327543D0500E53E2F /* CubicVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9EA27543D0500E53E2F /* CubicVector.swift */; };
+		00EEE9F427543D0500E53E2F /* CubicVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9EA27543D0500E53E2F /* CubicVector.swift */; };
+		00EEE9F62755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */; };
+		00EEE9F72755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */; };
+		00EEE9F92755742700E53E2F /* CubicSystemConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */; };
+		00EEE9FA2755742700E53E2F /* CubicSystemConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00EEE93D2754316F00E53E2F /* PBXContainerItemProxy */ = {
+		002BF3EA27FE38B70027238F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00EEE9332754316F00E53E2F;
 			remoteInfo = "Grid iOS";
 		};
-		00EEE9582754318B00E53E2F /* PBXContainerItemProxy */ = {
+		008BF1CC2801FB890095A6B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00EEE9532754318B00E53E2F;
 			remoteInfo = "Grid macOS";
+		};
+		00EEE93D2754316F00E53E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EEE9332754316F00E53E2F;
+			remoteInfo = "Grid iOS";
 		};
 		00EEE97A2754389700E53E2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -60,20 +97,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 00B093D82736FC4C0056F916;
 			remoteInfo = "Space Miner macOS";
-		};
-		00EEE9822754389700E53E2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00EEE9702754389700E53E2F;
-			remoteInfo = "ECS macOS";
-		};
-		00EEE9B62754396700E53E2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00B093BC2736FC470056F916 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00EEE9B12754396700E53E2F;
-			remoteInfo = "ECS iOS";
 		};
 		00EEE9CE27543AFD00E53E2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -91,8 +114,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00EEE9852754389700E53E2F /* ECS.framework in Embed Frameworks */,
-				00EEE95B2754318B00E53E2F /* Grid.framework in Embed Frameworks */,
+				002BF3ED27FE38BE0027238F /* Grid.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,7 +125,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00EEE9B92754396700E53E2F /* ECS.framework in Embed Frameworks */,
+				002BF3E927FE38B70027238F /* Grid.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +133,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		002BF3DB27FE37F60027238F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/iOSSupport/System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		002BF3DD27FE37FF0027238F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		002BF3DF27FE38260027238F /* HexagonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonNode.swift; sourceTree = "<group>"; };
+		003A213D27F8DFCE00FE77B4 /* GridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridNode.swift; sourceTree = "<group>"; };
+		005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatCubicCoordinate.swift; sourceTree = "<group>"; };
+		005C327B276153FB00A9D834 /* CubicRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicRange.swift; sourceTree = "<group>"; };
+		005C327E2763966600A9D834 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		00836F272808CBA4000AAEE0 /* PointsEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsEx.swift; sourceTree = "<group>"; };
+		00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDebuggableNode.swift; sourceTree = "<group>"; };
 		00B093C12736FC480056F916 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		00B093C22736FC480056F916 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		00B093C32736FC4B0056F916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +163,13 @@
 		00EEE9782754389700E53E2F /* ECS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ECS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EEE99F275438BD00E53E2F /* ECSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECSTests.swift; sourceTree = "<group>"; };
 		00EEE9B22754396700E53E2F /* ECS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EEE9E627543D0500E53E2F /* GridUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridUnit.swift; sourceTree = "<group>"; };
+		00EEE9E727543D0500E53E2F /* HexagonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonCell.swift; sourceTree = "<group>"; };
+		00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonOrientation.swift; sourceTree = "<group>"; };
+		00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCoordinate.swift; sourceTree = "<group>"; };
+		00EEE9EA27543D0500E53E2F /* CubicVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicVector.swift; sourceTree = "<group>"; };
+		00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCubicCoordinateRepresentable.swift; sourceTree = "<group>"; };
+		00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicSystemConstraint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00EEE9B82754396700E53E2F /* ECS.framework in Frameworks */,
+				002BF3D027FA5BE40027238F /* TSKit.Core in Frameworks */,
+				002BF3E827FE38B70027238F /* Grid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +186,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00EEE9842754389700E53E2F /* ECS.framework in Frameworks */,
-				00EEE95A2754318B00E53E2F /* Grid.framework in Frameworks */,
+				002BF3EC27FE38BE0027238F /* Grid.framework in Frameworks */,
+				002BF3D227FA5BFB0027238F /* TSKit.Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002BF3D827FE37E90027238F /* TSKit.Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002BF3DA27FE37EF0027238F /* TSKit.Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +240,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002BF3D627FE37B20027238F /* Grid+SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				003A213D27F8DFCE00FE77B4 /* GridNode.swift */,
+				002BF3DF27FE38260027238F /* HexagonNode.swift */,
+				00836F272808CBA4000AAEE0 /* PointsEx.swift */,
+			);
+			path = "Grid+SceneKit";
+			sourceTree = "<group>";
+		};
 		00B093BB2736FC470056F916 = {
 			isa = PBXGroup;
 			children = (
@@ -217,10 +268,11 @@
 		00B093C02736FC480056F916 /* Space Miner Shared */ = {
 			isa = PBXGroup;
 			children = (
-				00EEE8E627540D2500E53E2F /* Grid */,
+				002BF3D627FE37B20027238F /* Grid+SceneKit */,
 				00B093C12736FC480056F916 /* GameController.swift */,
 				00B093C22736FC480056F916 /* Art.scnassets */,
 				00B093C32736FC4B0056F916 /* Assets.xcassets */,
+				00836F2A2808CE8F000AAEE0 /* AnyDebuggableNode.swift */,
 			);
 			path = "Space Miner Shared";
 			sourceTree = "<group>";
@@ -262,13 +314,6 @@
 			path = "Space Miner macOS";
 			sourceTree = "<group>";
 		};
-		00EEE8E627540D2500E53E2F /* Grid */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grid;
-			sourceTree = "<group>";
-		};
 		00EEE9352754316F00E53E2F /* Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +333,16 @@
 		00EEE9612754328900E53E2F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				005C327827614BF500A9D834 /* FloatCubicCoordinate.swift */,
+				00EEE9E627543D0500E53E2F /* GridUnit.swift */,
+				00EEE9E927543D0500E53E2F /* CubicCoordinate.swift */,
+				00EEE9EA27543D0500E53E2F /* CubicVector.swift */,
+				00EEE9E727543D0500E53E2F /* HexagonCell.swift */,
+				00EEE9E827543D0500E53E2F /* HexagonOrientation.swift */,
+				00EEE9F52755740300E53E2F /* AnyCubicCoordinateRepresentable.swift */,
+				00EEE9F82755742700E53E2F /* CubicSystemConstraint.swift */,
+				005C327B276153FB00A9D834 /* CubicRange.swift */,
+				005C327E2763966600A9D834 /* Grid.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -318,6 +373,8 @@
 		00EEE9D027543B7700E53E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				002BF3DD27FE37FF0027238F /* SceneKit.framework */,
+				002BF3DB27FE37F60027238F /* SceneKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -368,9 +425,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				00EEE9B72754396700E53E2F /* PBXTargetDependency */,
+				002BF3EB27FE38B70027238F /* PBXTargetDependency */,
 			);
 			name = "Space Miner iOS";
+			packageProductDependencies = (
+				002BF3CF27FA5BE40027238F /* TSKit.Core */,
+			);
 			productName = "Space Miner iOS";
 			productReference = 00B093C82736FC4B0056F916 /* Space Miner.app */;
 			productType = "com.apple.product-type.application";
@@ -387,10 +447,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				00EEE9592754318B00E53E2F /* PBXTargetDependency */,
-				00EEE9832754389700E53E2F /* PBXTargetDependency */,
+				008BF1CD2801FB890095A6B1 /* PBXTargetDependency */,
 			);
 			name = "Space Miner macOS";
+			packageProductDependencies = (
+				002BF3D127FA5BFB0027238F /* TSKit.Core */,
+			);
 			productName = "Space Miner macOS";
 			productReference = 00B093D92736FC4C0056F916 /* Space Miner.app */;
 			productType = "com.apple.product-type.application";
@@ -409,6 +471,9 @@
 			dependencies = (
 			);
 			name = "Grid iOS";
+			packageProductDependencies = (
+				002BF3D727FE37E90027238F /* TSKit.Core */,
+			);
 			productName = "Grid iOS";
 			productReference = 00EEE9342754316F00E53E2F /* Grid.framework */;
 			productType = "com.apple.product-type.framework";
@@ -446,6 +511,9 @@
 			dependencies = (
 			);
 			name = "Grid macOS";
+			packageProductDependencies = (
+				002BF3D927FE37EF0027238F /* TSKit.Core */,
+			);
 			productName = "Grid macOS";
 			productReference = 00EEE9542754318B00E53E2F /* Grid.framework */;
 			productType = "com.apple.product-type.framework";
@@ -552,6 +620,9 @@
 				Base,
 			);
 			mainGroup = 00B093BB2736FC470056F916;
+			packageReferences = (
+				002BF3CE27FA5BE40027238F /* XCRemoteSwiftPackageReference "TSKit" */,
+			);
 			productRefGroup = 00B093C92736FC4B0056F916 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -640,8 +711,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B093CE2736FC4B0056F916 /* GameViewController.swift in Sources */,
+				00836F2B2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */,
+				002BF3E427FE38970027238F /* GridNode.swift in Sources */,
 				00B093E32736FC4C0056F916 /* GameController.swift in Sources */,
+				002BF3E527FE38970027238F /* HexagonNode.swift in Sources */,
 				00B093CC2736FC4B0056F916 /* AppDelegate.swift in Sources */,
+				00836F282808CBA4000AAEE0 /* PointsEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,8 +725,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B093DE2736FC4C0056F916 /* GameViewController.swift in Sources */,
+				00836F2C2808CE8F000AAEE0 /* AnyDebuggableNode.swift in Sources */,
+				002BF3E627FE38980027238F /* GridNode.swift in Sources */,
 				00B093E42736FC4C0056F916 /* GameController.swift in Sources */,
+				002BF3E727FE38980027238F /* HexagonNode.swift in Sources */,
 				00B093DC2736FC4C0056F916 /* AppDelegate.swift in Sources */,
+				00836F292808CBA4000AAEE0 /* PointsEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +738,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EEE9EF27543D0500E53E2F /* HexagonOrientation.swift in Sources */,
+				005C327927614BF500A9D834 /* FloatCubicCoordinate.swift in Sources */,
+				00EEE9ED27543D0500E53E2F /* HexagonCell.swift in Sources */,
+				005C327F2763966600A9D834 /* Grid.swift in Sources */,
+				00EEE9F127543D0500E53E2F /* CubicCoordinate.swift in Sources */,
+				00EEE9F327543D0500E53E2F /* CubicVector.swift in Sources */,
+				00EEE9F92755742700E53E2F /* CubicSystemConstraint.swift in Sources */,
+				005C327C276153FB00A9D834 /* CubicRange.swift in Sources */,
+				00EEE9F62755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */,
+				00EEE9EB27543D0500E53E2F /* GridUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +763,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EEE9F027543D0500E53E2F /* HexagonOrientation.swift in Sources */,
+				005C327A27614BF500A9D834 /* FloatCubicCoordinate.swift in Sources */,
+				00EEE9EE27543D0500E53E2F /* HexagonCell.swift in Sources */,
+				005C32802763966600A9D834 /* Grid.swift in Sources */,
+				00EEE9F227543D0500E53E2F /* CubicCoordinate.swift in Sources */,
+				00EEE9F427543D0500E53E2F /* CubicVector.swift in Sources */,
+				00EEE9FA2755742700E53E2F /* CubicSystemConstraint.swift in Sources */,
+				005C327D276153FB00A9D834 /* CubicRange.swift in Sources */,
+				00EEE9F72755740300E53E2F /* AnyCubicCoordinateRepresentable.swift in Sources */,
+				00EEE9EC27543D0500E53E2F /* GridUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,15 +801,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		002BF3EB27FE38B70027238F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9332754316F00E53E2F /* Grid iOS */;
+			targetProxy = 002BF3EA27FE38B70027238F /* PBXContainerItemProxy */;
+		};
+		008BF1CD2801FB890095A6B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EEE9532754318B00E53E2F /* Grid macOS */;
+			targetProxy = 008BF1CC2801FB890095A6B1 /* PBXContainerItemProxy */;
+		};
 		00EEE93E2754316F00E53E2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 00EEE9332754316F00E53E2F /* Grid iOS */;
 			targetProxy = 00EEE93D2754316F00E53E2F /* PBXContainerItemProxy */;
-		};
-		00EEE9592754318B00E53E2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00EEE9532754318B00E53E2F /* Grid macOS */;
-			targetProxy = 00EEE9582754318B00E53E2F /* PBXContainerItemProxy */;
 		};
 		00EEE97B2754389700E53E2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -721,16 +825,6 @@
 			isa = PBXTargetDependency;
 			target = 00B093D82736FC4C0056F916 /* Space Miner macOS */;
 			targetProxy = 00EEE97C2754389700E53E2F /* PBXContainerItemProxy */;
-		};
-		00EEE9832754389700E53E2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00EEE9702754389700E53E2F /* ECS macOS */;
-			targetProxy = 00EEE9822754389700E53E2F /* PBXContainerItemProxy */;
-		};
-		00EEE9B72754396700E53E2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00EEE9B12754396700E53E2F /* ECS iOS */;
-			targetProxy = 00EEE9B62754396700E53E2F /* PBXContainerItemProxy */;
 		};
 		00EEE9CF27543AFD00E53E2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -942,10 +1036,11 @@
 		00B093EF2736FC4C0056F916 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Space Miner macOS/Space_Miner_macOS.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -973,10 +1068,11 @@
 		00B093F02736FC4C0056F916 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Space Miner macOS/Space_Miner_macOS.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1005,6 +1101,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1012,6 +1109,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1040,6 +1141,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1047,6 +1149,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1074,6 +1180,7 @@
 		00EEE94D2754316F00E53E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2NBF8K2F9;
@@ -1098,6 +1205,7 @@
 		00EEE94E2754316F00E53E2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P2NBF8K2F9;
@@ -1124,6 +1232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1140,9 +1249,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.grid";
 				PRODUCT_MODULE_NAME = Grid;
 				PRODUCT_NAME = Grid;
 				SDKROOT = macosx;
@@ -1159,6 +1268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1175,9 +1285,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vgsoftware.space-miner.grid";
 				PRODUCT_MODULE_NAME = Grid;
 				PRODUCT_NAME = Grid;
 				SDKROOT = macosx;
@@ -1192,7 +1302,7 @@
 		00EEE9872754389700E53E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1226,7 +1336,7 @@
 		00EEE9882754389700E53E2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1455,6 +1565,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		002BF3CE27FA5BE40027238F /* XCRemoteSwiftPackageReference "TSKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adya/TSKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		002BF3CF27FA5BE40027238F /* TSKit.Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 002BF3CE27FA5BE40027238F /* XCRemoteSwiftPackageReference "TSKit" */;
+			productName = TSKit.Core;
+		};
+		002BF3D127FA5BFB0027238F /* TSKit.Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 002BF3CE27FA5BE40027238F /* XCRemoteSwiftPackageReference "TSKit" */;
+			productName = TSKit.Core;
+		};
+		002BF3D727FE37E90027238F /* TSKit.Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 002BF3CE27FA5BE40027238F /* XCRemoteSwiftPackageReference "TSKit" */;
+			productName = TSKit.Core;
+		};
+		002BF3D927FE37EF0027238F /* TSKit.Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 002BF3CE27FA5BE40027238F /* XCRemoteSwiftPackageReference "TSKit" */;
+			productName = TSKit.Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00B093BC2736FC470056F916 /* Project object */;
 }
